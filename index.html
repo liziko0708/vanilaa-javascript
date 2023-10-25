@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/querries.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <img class="splitter-svg" src="./images/logo.svg" alt="splitter svg" />
+      <div class="calculator-div">
+        <div class="container">
+          <div class="left">
+            <h3>Bill</h3>
+            <div class="input-container">
+              <img src="./images/icon-dollar.svg" alt="dollar-sign" />
+              <input
+                type="number"
+                class="input-field total-bill-input"
+                min="0"
+              />
+            </div>
+            <h3>Select Tip %</h3>
+
+            <div class="precents">
+              <input
+                type="number"
+                placeholder="Custom"
+                class="custom-tip-input"
+              />
+            </div>
+            <h3 class="number-of-persons">Number of People</h3>
+            <div class="input-container persons">
+              <img src="./images/icon-person.svg" alt="PERSON-SVG" />
+              <input type="number" class="input-field people-input" min="0" />
+            </div>
+          </div>
+          <div class="results">
+            <div class="results-container">
+              <div class="tip-result">
+                <div>
+                  <h2>Tip Amount</h2>
+                  <h4>/ person</h4>
+                </div>
+                <div class="price-container">
+                  <span class="tip-per-person"></span>
+                </div>
+              </div>
+              <div class="total-result">
+                <div>
+                  <h2>Total</h2>
+                  <h4>/ person</h4>
+                </div>
+                <div class="price-container">
+                  <span class="bill-per-person"></span>
+                </div>
+              </div>
+              <button class="reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
